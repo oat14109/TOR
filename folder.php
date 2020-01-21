@@ -8,9 +8,9 @@ if (empty($_SESSION['USER_TOR'])) {
     header('Location: login.php');
     exit;
 }
-====44444
 
-getheader(); test
+
+getheader();
 
 $department = findDepertment($_SESSION['USER_TOR']);
 $folderName = $department->dept_code." Dept/".(date("Y")+543);
