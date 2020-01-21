@@ -1,4 +1,5 @@
 ﻿<?php
+echo 'ddd';
 session_start();
 require_once('includes/connect.php');
 include 'includes/function.php';
@@ -9,7 +10,7 @@ if (empty($_SESSION['USER_TOR'])) {
 }
 
 
-getheader(); test
+getheader();
 
 $department = findDepertment($_SESSION['USER_TOR']);
 $folderName = $department->dept_code." Dept/".(date("Y")+543);
